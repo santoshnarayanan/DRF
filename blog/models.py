@@ -41,7 +41,7 @@ class Post(models.Model):
         default='published'
     )
     objects = models.Manager()  # Default manager
-    post_objects = PostObjects()  # Custom manager for published posts
+    postobjects = PostObjects()  # Custom manager for published posts
 
     class Meta:
         ordering = ('-published',)
